@@ -8,7 +8,7 @@ var upload = require('./src/router/upload');
 var mail = require('./src/router/mail');
 var jwt = require('./src/router/jwt');
 
-mongoose.connect(connect.url, { useNewUrlParser: true })
+mongoose.connect(connect.local_url, { useNewUrlParser: true })
     .then(() => {
         console.log("Connected to Database");
     }).catch(err => {
